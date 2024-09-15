@@ -1,0 +1,333 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/victor-costa/intelFPGA/20.1/modelsim_ase/bin
+Eent
+Z0 w1726441242
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 611
+Z4 d/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm 
+Z5 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+Z6 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+l0
+L5 1
+VM;OQ;z[K>7g59=G6O1Jhk2
+!s100 6TYUDc=YN=1gQ4Zn]K;Ng2
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1726441251
+!i10b 1
+Z9 !s108 1726441250.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl|
+Z11 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Aarch
+R1
+R2
+R3
+Z14 DEx4 work 3 ent 0 22 M;OQ;z[K>7g59=G6O1Jhk2
+!i122 611
+l103
+Z15 L11 258
+Z16 V@dmInMJMW8=6P9zf>JK4^0
+Z17 !s100 6n3X=oM`HjNPkEm]jS2o>1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eent_tb
+Z18 w1726439992
+R2
+R3
+!i122 610
+R4
+Z19 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /TestBench.vhd
+Z20 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /TestBench.vhd
+l0
+L4 1
+V0HkOg72Cfol[`RjmXXz3M1
+!s100 k:h[1K8SF;zhIi9mI9nPL1
+R7
+32
+Z21 !s110 1726441250
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /TestBench.vhd|
+Z23 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /TestBench.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+DEx4 work 6 ent_tb 0 22 0HkOg72Cfol[`RjmXXz3M1
+!i122 610
+l19
+L7 30
+Vf3W7cIO3z7F5l57ZJlKP<2
+!s100 cf>?GAo:L<W<m<[4e`S^B2
+R7
+32
+R21
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Egerador_imediatos
+Z24 w1724032360
+R1
+R2
+R3
+!i122 606
+R4
+Z25 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /gerador_imediatos.vhdl
+Z26 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /gerador_imediatos.vhdl
+l0
+L5 1
+VHC`_`5LIE_Oi3KX3BcR`c1
+!s100 [Qi>M5e7^N:Z5^@4:Cn6f3
+R7
+32
+R21
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /gerador_imediatos.vhdl|
+Z28 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /gerador_imediatos.vhdl|
+!i113 1
+R12
+R13
+Amain
+R1
+R2
+R3
+DEx4 work 17 gerador_imediatos 0 22 HC`_`5LIE_Oi3KX3BcR`c1
+!i122 606
+l14
+L11 16
+Vo:oP[hbn<1WmfNL?^VU7_1
+!s100 REkPfi1?Aa5kzEYWHVllT0
+R7
+32
+R21
+!i10b 1
+R9
+R27
+R28
+!i113 1
+R12
+R13
+Emem_rv
+Z29 w1726423324
+Z30 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R1
+R2
+R3
+!i122 607
+R4
+Z31 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /mem_rv.vhdl
+Z32 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /mem_rv.vhdl
+l0
+L7 1
+V@D=6JnaUGi21Zd:^M`FUl1
+!s100 R1Ca4`FSW;]_zURT0kISh1
+R7
+32
+R21
+!i10b 1
+R9
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /mem_rv.vhdl|
+Z34 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /mem_rv.vhdl|
+!i113 1
+R12
+R13
+Artl
+R30
+R1
+R2
+R3
+DEx4 work 6 mem_rv 0 22 @D=6JnaUGi21Zd:^M`FUl1
+!i122 607
+l40
+L17 43
+VJSn_;]HdcdkmaVm3RTW`41
+!s100 zE39zm<UUE[T^BCS8l>Tg0
+R7
+32
+R21
+!i10b 1
+R9
+R33
+R34
+!i113 1
+R12
+R13
+Epc
+Z35 w1726426869
+R1
+R2
+R3
+!i122 609
+R4
+Z36 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ContadorDePRograma.vhdl
+Z37 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ContadorDePRograma.vhdl
+l0
+L5 1
+V3eg5JHczHGnl71]6X@c9W0
+!s100 @n3:9AzL0MjR@0a;H75^g1
+R7
+32
+R21
+!i10b 1
+R9
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ContadorDePRograma.vhdl|
+Z39 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ContadorDePRograma.vhdl|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+DEx4 work 2 pc 0 22 3eg5JHczHGnl71]6X@c9W0
+!i122 609
+l16
+L14 14
+VALT6V>lYL[D?EMnTP9>C[2
+!s100 gG>PAO6QLHZi5nM>h<W083
+R7
+32
+R21
+!i10b 1
+R9
+R38
+R39
+!i113 1
+R12
+R13
+Eula
+Z40 w1726431192
+R1
+R2
+R3
+!i122 608
+R4
+Z41 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl
+Z42 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl
+l0
+L5 1
+VD01OCBH0lR^@?i2TdTdOV1
+!s100 c<ZC>B0NUn=Z=5gX4`I0>1
+R7
+32
+R21
+!i10b 1
+R9
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl|
+Z44 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 3 ula 0 22 D01OCBH0lR^@?i2TdTdOV1
+!i122 608
+l16
+L14 74
+V2b`Z6fESn41WCgo_e7Fo30
+!s100 WG`R6U;7Hl:^k@nUb:k>j0
+R7
+32
+R21
+!i10b 1
+R9
+R43
+R44
+!i113 1
+R12
+R13
+Amain
+R1
+R2
+R3
+DEx4 work 3 ula 0 22 oLRE8V6m61M`aABOKI:Z61
+!i122 275
+l17
+L14 76
+VQ9TZAIDS>eV8Amf:_Yn_70
+!s100 mm2Fz0GOI1:1[bKbAN7K_2
+R7
+32
+!s110 1726430330
+!i10b 1
+!s108 1726430330.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl|
+R44
+!i113 1
+R12
+R13
+w1726423213
+Exregs
+Z45 w1726269880
+R1
+R2
+R3
+!i122 605
+R4
+Z46 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /Banco_de_Registradores.vhdl
+Z47 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /Banco_de_Registradores.vhdl
+l0
+L6 1
+V7WCUzi7<dXY]?7A>W<dm;3
+!s100 5f9AAO2fO=C1FGUZASOKb0
+R7
+32
+R21
+!i10b 1
+R9
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /Banco_de_Registradores.vhdl|
+Z49 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /Banco_de_Registradores.vhdl|
+!i113 1
+R12
+R13
+Amain
+R1
+R2
+R3
+DEx4 work 5 xregs 0 22 7WCUzi7<dXY]?7A>W<dm;3
+!i122 605
+l20
+L16 36
+VlQ7gbD[`NF=g22^P[be`b1
+!s100 7BLB6h:43zhZI[c@5LODY3
+R7
+32
+R21
+!i10b 1
+R9
+R48
+R49
+!i113 1
+R12
+R13
