@@ -1,15 +1,15 @@
-{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ContadorDePRograma.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ContadorDePRograma.vhdl}
+{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity PC
--- Compiling architecture arch of PC
+-- Compiling entity MULTICICLO
+-- Compiling architecture arch of MULTICICLO
 
 } {} {}} {{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /TestBench.vhd}} {1 {vcom -work work -2002 -explicit {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /TestBench.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 19:57:17 on Sep 16,2024
+Start time: 16:41:30 on Sep 17,2024
 vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /TestBench.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -17,7 +17,7 @@ vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documento
 -- Loading package NUMERIC_STD
 -- Compiling entity ent_tb
 -- Compiling architecture behavior of ent_tb
-End time: 19:57:17 on Sep 16,2024, Elapsed time: 0:00:00
+End time: 16:41:30 on Sep 17,2024, Elapsed time: 0:00:00
 
 } {} {}} {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /mem_rv.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /mem_rv.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -31,7 +31,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /Banco_de_Registradores.vhdl}} {1 {vcom -work work -2002 -explicit {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /Banco_de_Registradores.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 19:57:16 on Sep 16,2024
+Start time: 16:41:30 on Sep 17,2024
 vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /Banco_de_Registradores.vhdl 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -39,7 +39,7 @@ vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documento
 -- Loading package NUMERIC_STD
 -- Compiling entity XREGS
 -- Compiling architecture main of XREGS
-End time: 19:57:17 on Sep 16,2024, Elapsed time: 0:00:01
+End time: 16:41:30 on Sep 17,2024, Elapsed time: 0:00:00
 
 } {} {}} {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /gerador_imediatos.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /gerador_imediatos.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -52,7 +52,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /gerador_imediatos.vhdl}} {1 {vcom -work work -2002 -explicit {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /gerador_imediatos.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 19:57:17 on Sep 16,2024
+Start time: 16:41:30 on Sep 17,2024
 vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /gerador_imediatos.vhdl 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -60,7 +60,7 @@ vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documento
 -- Loading package NUMERIC_STD
 -- Compiling entity gerador_imediatos
 -- Compiling architecture main of gerador_imediatos
-End time: 19:57:17 on Sep 16,2024, Elapsed time: 0:00:00
+End time: 16:41:30 on Sep 17,2024, Elapsed time: 0:00:00
 
 } {} {}} {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /TestBench.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /TestBench.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -73,7 +73,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ContadorDePRograma.vhdl}} {1 {vcom -work work -2002 -explicit {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ContadorDePRograma.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 19:57:17 on Sep 16,2024
+Start time: 16:41:30 on Sep 17,2024
 vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ContadorDePRograma.vhdl 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -81,11 +81,11 @@ vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documento
 -- Loading package NUMERIC_STD
 -- Compiling entity PC
 -- Compiling architecture arch of PC
-End time: 19:57:17 on Sep 16,2024, Elapsed time: 0:00:00
+End time: 16:41:30 on Sep 17,2024, Elapsed time: 0:00:00
 
 } {} {}} {{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /mem_rv.vhdl}} {1 {vcom -work work -2002 -explicit {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /mem_rv.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 19:57:17 on Sep 16,2024
+Start time: 16:41:30 on Sep 17,2024
 vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /mem_rv.vhdl 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -94,16 +94,7 @@ vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documento
 -- Loading package std_logic_textio
 -- Compiling entity mem_rv
 -- Compiling architecture RTL of mem_rv
-End time: 19:57:17 on Sep 16,2024, Elapsed time: 0:00:00
-
-} {} {}} {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity MULTICICLO
--- Compiling architecture arch of MULTICICLO
+End time: 16:41:30 on Sep 17,2024, Elapsed time: 0:00:00
 
 } {} {}} {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /Banco_de_Registradores.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /Banco_de_Registradores.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -116,7 +107,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl}} {1 {vcom -work work -2002 -explicit {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 19:57:17 on Sep 16,2024
+Start time: 16:41:30 on Sep 17,2024
 vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -124,7 +115,20 @@ vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documento
 -- Loading package NUMERIC_STD
 -- Compiling entity MULTICICLO
 -- Compiling architecture arch of MULTICICLO
-End time: 19:57:17 on Sep 16,2024, Elapsed time: 0:00:00
+** Warning: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl(498): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+End time: 16:41:30 on Sep 17,2024, Elapsed time: 0:00:00
+
+} {} {}} {{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl}} {1 {vcom -work work -2002 -explicit {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 16:41:30 on Sep 17,2024
+vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ULA
+-- Compiling architecture Behavioral of ULA
+End time: 16:41:30 on Sep 17,2024, Elapsed time: 0:00:00
 
 } {} {}} {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -134,17 +138,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity ULA
 -- Compiling architecture Behavioral of ULA
-
-} {} {}} {{/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl}} {1 {vcom -work work -2002 -explicit {/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 19:57:17 on Sep 16,2024
-vcom -reportprogress 300 -work work -2002 -explicit /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /ULA.vhdl 
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity ULA
--- Compiling architecture Behavioral of ULA
-End time: 19:57:17 on Sep 16,2024, Elapsed time: 0:00:00
 
 } {} {}}

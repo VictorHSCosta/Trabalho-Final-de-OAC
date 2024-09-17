@@ -96,9 +96,9 @@ begin
           CONTROLEULA <= "0000";
           EscrevePCCond <= '0';
           
-          estado <= "0001"; -- Indo para o prÃ³ximo estado
+          estado <= "0001"; -- Indo para o próximo estado
 
-        when "0001" => -- DecodificaÃ§Ã£o
+        when "0001" => -- Decodificação
           LeMem <= '0';
           EscrevePCB <= '0';
           EscrevePC <= '0';
@@ -206,7 +206,7 @@ begin
 
           estado <= "0010";
 
-        when "0010" => -- ExecuÃ§Ã£o
+        when "0010" => -- Execução
 
           EscreveIR <= '0';
           EscrevePCCond <= '0';
@@ -226,7 +226,7 @@ begin
           Mem2Reg <= "00";
           estado <= "0000";
 
-        when "0100" => -- Ler da memÃ³ria
+        when "0100" => -- Ler da memória
           louD <= '1';
           EscreveMem <= '0';
           LeMem <= '1';
@@ -266,7 +266,7 @@ begin
     end if;
   end process;
 
-  -- Controle de leitura de memÃ³ria
+  -- Controle de leitura de memória
   process(louD, LeMem)
   begin
     if LeMem = '1' then
@@ -279,7 +279,7 @@ begin
     end if;
   end process;
 
-  -- OperaÃ§Ã£o da ULA
+  -- Operação da ULA
   process(ro1, ro2, CONTROLEULA, pc_back, imediato, EscrevePC)
   begin
     case OrigAULA is
@@ -307,7 +307,7 @@ begin
     --opcode_ULA <= CONTROLEULA;
   end process;
 
-  -- Registrador de instruÃ§Ãµes
+  -- Registrador de instruções
   process(dataout)
   begin
     if EscreveIR = '1' then
@@ -345,7 +345,64 @@ begin
       DADODAMEMORIA <= dataout;
     end if;
   end process;
- 
+ -- Controle da ULA
+--  process(ALUOp, funct3, funct7 , opcode)
+--  begin
+--    case ALUOp is
+--      when "00" => -- Tipo I
+--        case funct3 is 
+--          when "010" => -- LW e SW
+--            CONTROLEULA <= "0000";
+--          when "000" =>
+--            CONTROLEULA <= "0000"; -- ADDI
+--          when "110" =>
+--            CONTROLEULA <= "0011"; -- ORI
+--          when "111" =>
+--            CONTROLEULA <= "0010"; -- ANDI
+--          when "100" =>
+--            CONTROLEULA <= "0100"; -- XORI
+--          when others =>
+--            CONTROLEULA <= "0000"; -- JAL, JALR, AUIPC
+--        end case;
+--      when "01" => -- Branch
+--        case funct3 is
+--          when "000" =>
+--            CONTROLEULA <= "0001"; -- BEQ
+--            EscrevePCCond <= '1';
+--          when "001" =>
+--            CONTROLEULA <= "0001"; -- BNE
+--            EscrevePCCond <= '1';
+--          when others =>
+--            EscrevePCCond <= '0';
+--            CONTROLEULA <= "0001"; -- BNE
+--        end case;
+--      when "10" => -- Tipo R
+--        case funct7 is
+--          when "0000000" =>
+--            case funct3 is 
+--              when "000" =>
+--                CONTROLEULA <= "0000"; -- ADD
+--              when "010" =>
+--                CONTROLEULA <= "1000"; -- SLT
+--              when "100" =>
+--                CONTROLEULA <= "0100"; -- XOR
+--              when "110" => 
+--                CONTROLEULA <= "0011"; -- OR  
+--              when "111" =>
+--                CONTROLEULA <= "0010"; -- AND              
+--              when others =>
+--                CONTROLEULA <= "0000";
+--            end case;
+--          when "0100000" =>
+--            CONTROLEULA <= "0001"; -- SUB
+--          when others =>
+--            CONTROLEULA <= "0000";
+--        end case;
+--      when others =>
+--        CONTROLEULA <= "0000";
+--    end case;
+--  end process;
+
   -- WB (Write Back)
   process(SaidaULA, EscreveReg, Mem2Reg, EscreveMem)
   begin
@@ -363,7 +420,7 @@ begin
     end if;
   end process;
 
-  -- Registrador de saÃ­da da ULA
+  -- Registrador de saída da ULA
   process(Z)
   begin
     SaidaULA <= Z;

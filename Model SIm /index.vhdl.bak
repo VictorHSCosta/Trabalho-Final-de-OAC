@@ -44,15 +44,6 @@ architecture arch of MULTICICLO is
     );
   end component;
 
-  component ALUControl is
-    Port (
-        ALUOp : in STD_LOGIC_VECTOR(1 downto 0);
-        funct3 : in STD_LOGIC_VECTOR(2 downto 0);
-        funct7 : in STD_LOGIC_VECTOR(6 downto 0);
-        ALUControlOut : out STD_LOGIC_VECTOR(3 downto 0)
-    );
-  end component;
-
   -- esse é o sinal de controle
   signal estado : std_logic_vector(3 downto 0) := "0000";
 
@@ -74,14 +65,11 @@ architecture arch of MULTICICLO is
   signal rs1 ,rs2  ,rd : std_logic_vector(4 downto 0); -- os registradores que vamos usar
   signal ENDERECO_MEMORIA : std_logic_vector(11 downto 0); -- é o signal que pertence a memoria de instrucoes
   signal opcode_ULA : std_logic_vector(3 downto 0); -- define a operacao da ula
-  signal OpALU , Mem2Reg: std_logic_vector(1 downto 0);
-  signal OrigBULA , OrigAULA , ALUOp: std_logic_vector(1 downto 0) := "00";
-  signal ALUOp_CONTROLE : std_logic_vector(1 downto 0) := "00";
+  signal Mem2Reg: std_logic_vector(1 downto 0);
+  signal OrigBULA , OrigAULA , ALUOp: std_logic_vector(1 downto 0);
 
-
-  signal funct3 : std_logic_vector(2 downto 0) := "000";
-  signal  funct7 : std_logic_vector(6 downto 0) := "0000000";
-  signal ALUControlOut : std_logic_vector(3 downto 0) := "0000";
+  signal funct3 : std_logic_vector(2 downto 0) ;
+  signal  funct7 : std_logic_vector(6 downto 0) ;
 
   -- guarda o valor da saida da ula 
   signal SaidaULA : std_logic_vector(31 downto 0);
@@ -96,6 +84,11 @@ architecture arch of MULTICICLO is
 
   -- sinal de valor da memoria
   signal DADODAMEMORIA : std_logic_vector(31 downto 0);
+
+  -- controles internos do controlador
+  signal CONTROLEINTERNO: std_logic_vector(3 downto 0) := "0000";
+  
+
   
   
 begin
@@ -112,7 +105,6 @@ begin
 
   ULA1: ULA port map (opcode_ULA, A, B, Z, cond);
 
-  ALUControl1: ALUControl port map (ALUOp_CONTROLE, funct3, funct7, ALUControlOut);
   -- fim dos port maps
 
   process (clk)
@@ -122,38 +114,58 @@ begin
         when "0000" => --Fetch 
           --Sinais de controle
           LOUD <= '0';
-          CONTROLEULA <= "0000";
-          OrigAULA <= "10";
+          --CONTROLEULA <= "0000";
+          --OrigAULA <= "10";
           OrigBULA <= "01";
+	  CONTROLEULA <= "0000";
           OrigPC <= '0';
-          EscrevePC <= '1';
           EscrevePCCond <= '0';
           EscrevePCB <= '1';
           EscreveMem <= '0';
+          EscrevePC <= '1';
+          LeMem <= '1';
+          EscreveReg <= '0';
           
           estado <= "0001"; -- indo para o proximo estado
 
         when "0001" => -- decodificação
 
-          EscrevePC <= '0';
-          EscreveIR <= '1';
+          LeMem <= '0'; -- é importante para que possa ler a memoria corretamente
+          EscrevePCB <= '0'; -- deliga pc_back 
+          EscrevePC <= '0'; -- é importante para que nao haja escrita na hora errada
+          EscreveIR <= '1'; -- é importante para que possa escrever a instrucao
           EscreveReg <= '0';
           OrigAULA <= "01";
           OrigBULA <= "10";
 
           estado <= "0010";
         when "0010" => -- execução
+          EscreveIR <= '0';
           EscrevePCCond <= '0';
-          EscrevePC <= '0';          
-          estado <= "0000";
-        when "0011" => -- branch
+          EscrevePC <= '0'; 
+          
+          -- precisamos ver qual é a operacao que vamos fazer
+          case opcode is
+            when "0000011" => -- lw onde ele vai pegar da memoria e escrever no banco de registradores
+                estado <= "0100";
+            when others => 
+              estado <= "0011";
+          end case;
+
+        when "0011" => -- escrita no banco de registradores -- estado pronto
+
           EscrevePCCond <= '0';
           EscrevePC <= '0';
-	  Mem2Reg <= "00";
-
+          EscreveReg <= '1';
+          Mem2Reg <= "00";
           estado <= "0000";
-          
-        
+
+        when "0100" => -- ler da memoria
+            louD <= '1';
+            EscreveMem <= '0';
+            LeMem <= '1';
+            EscreveIR <= '0';
+            estado <= "0011" ;        
         when others => -- estado de inicio , estado de building
           estado <= "0000";
       end case;            
@@ -165,17 +177,18 @@ begin
   begin
     verificador <= ESCREVEPCCOND and cond ;
 
-    if (verificador or ESCREVEPC) = '1' then
-      case OrigPC is
-        when '0' => 
-          CONTADOR_DE_PROGRAMA <=  Z(11 downto 0);
-        when '1' => 
-          CONTADOR_DE_PROGRAMA <= SaidaULA(11 downto 0);
-        when others =>
-          CONTADOR_DE_PROGRAMA <= pc_back;
-      end case;
+    if  falling_edge(clk) then
+      if (verificador or ESCREVEPC) = '1' then
+        case OrigPC is
+          when '0' => 
+            CONTADOR_DE_PROGRAMA <=  Z(11 downto 0);
+          when '1' => 
+            CONTADOR_DE_PROGRAMA <= SaidaULA(11 downto 0);
+          when others =>
+            CONTADOR_DE_PROGRAMA <= pc_back;
+        end case;
+      end if;
     end if;
-
   end process;
 
   --pc back
@@ -187,18 +200,22 @@ begin
   end process;
 
   -- Memoria dados e instrucoes
-  process(LOUD)
+  process(LOUD , LeMem)
   begin
-    case LOUD is
-      when '1' =>
-        ENDERECO_MEMORIA <= SaidaULA(11 downto 0);
-      when others =>
-        ENDERECO_MEMORIA <= CONTADOR_DE_PROGRAMA;
-    end case;
+    if LeMem = '1' then
+      case LOUD is
+        when '1' =>
+	   --ENDERECO_MEMORIA <= (SaidaULA(11 downto 0) / 4);
+	   ENDERECO_MEMORIA <= std_logic_vector(unsigned(SaidaULA(11 downto 0)) / 4);
+        when others =>
+          --ENDERECO_MEMORIA <= (CONTADOR_DE_PROGRAMA / 4);
+	  ENDERECO_MEMORIA <= std_logic_vector(unsigned(CONTADOR_DE_PROGRAMA) / 4);
+      end case;
+    end if;
   end process;
 
   -- funcionamento da ula
-  process (ro1 , ro2 , CONTROLEULA , pc_back , imediato)
+  process (ro1 , ro2 , CONTROLEULA , pc_back , imediato ,ESCREVEPC)
   begin
     -- Entra A ULA
     case OrigAULA is
@@ -225,13 +242,11 @@ begin
 
     opcode_ULA <= CONTROLEULA;
 
-    SaidaULA <= Z;
-
   end process ;
   --funcionamento banco de registradores
   
   -- process registrdor de instrucoes
-  process(ESCREVEIR)
+  process(ESCREVEIR , dataout)
   begin
     if ESCREVEIR = '1' then
       funct3 <= dataout(14 downto 12);
@@ -270,53 +285,58 @@ begin
     end if;
   end process;
 
-  -- controle do opcode
-  process(opcode)
-  begin
-    case opcode  is 
-      when "0000011" => --lw 
-        ALUOp_CONTROLE <= "00";
-      when "0100011" => --lw 
-        ALUOp_CONTROLE <= "00";
-      when "0010011" => --addi
-        ALUOp_CONTROLE <= "00";
-      when ("1100011")=> --addi
-        ALUOp_CONTROLE <= "01";
-      when "0110011" => --branch
-        ALUOp_CONTROLE <= "10";
-      when "1100111" => --jalr
-        ALUOp_CONTROLE <= "00";
-      when others =>
-        null;
-    end case;
-  end process;
-
   -- controle da ula
   process(clk)
   begin
     case ALUOp is
       when "00" => -- tipo i
         case funct3 is 
-          when "010" =>
+          when "010" => -- lw e sw
             CONTROLEULA <= "0000";
           when "000" =>
+            CONTROLEULA <= "0000"; --addi
+          when "110" =>
+            CONTROLEULA <= "0011"; --ori
+          when "111" =>
+            CONTROLEULA <= "0010"; --andi
+          when "100" =>
+            CONTROLEULA <= "0100"; --xori 
+          when others => --jal jalr auipc
             CONTROLEULA <= "0000";
-          when others =>
-            null;
         end case;
       when "01" => -- branch
         case funct3 is
           when "000" =>
-            CONTROLEULA <= "0001";
+            CONTROLEULA <= "0001"; -- beq
             EscrevePCCond <= '1';
           when "001" =>
-            CONTROLEULA <= "0001";
+            CONTROLEULA <= "0001"; --bne
             EscrevePCCond <= '1';
           when others =>
             null;
         end case;
-      when "10" =>
-        ALUOp <= "10";
+      when "10" => -- r
+        case funct7 is
+          when "0000000" =>
+            case funct3 is 
+              when "000" =>
+                CONTROLEULA <= "0000"; --add
+              when "010" =>
+                CONTROLEULA <= "1000"; --slt
+              when "100" =>
+                CONTROLEULA <= "0100"; --xor
+              when "110" => 
+                CONTROLEULA <= "0011"; --or  
+              when "111" =>
+                CONTROLEULA <= "0010"; --and              
+              when others =>
+                null;
+            end case;
+          when "0100000" =>
+            CONTROLEULA <= "0001"; --sub
+          when others =>
+            null;
+        end case;
       when others =>
         null;
     end case;
@@ -339,5 +359,109 @@ begin
     end if;
   end process;
 
+  --registrador saida da ula
+  process(Z)
+  begin
+    SaidaULA <= Z;
+  end process;
+
+  -- controle de fluxo do cotrole baseado no opcode
+  process(opcode ,funct3, funct7)--roda no decoder
+  begin
+    case opcode is
+      when "0000011" => --lw 
+        OrigAULA <= "01";
+        OrigBULA <= "10";
+        ALUOp <= "00";
+      when "0100011" => --sw
+        OrigAULA <= "01";
+        OrigBULA <= "10";
+        ALUOp <= "00";
+      when "0110011" => --r
+        case funct3 is 
+          when "000" => -- add ou sub
+            case funct7 is
+              when "0000000" => --add
+                OrigAULA <= "01";
+                OrigBULA <= "00";
+                ALUOp <= "10";
+              when "0100000" => --sub
+                OrigAULA <= "01";
+                OrigBULA <= "00";
+                ALUOp <= "10";
+              when others =>
+                null;
+            end case;
+          when "010" => -- slt
+            OrigAULA <= "01";
+            OrigBULA <= "00";
+            ALUOp <= "01";
+          when "110" => -- or
+            OrigAULA <= "01";
+            OrigBULA <= "00";
+            ALUOp <= "10";
+          when "111" => -- and
+            OrigAULA <= "01";
+            OrigBULA <= "00";
+            ALUOp <= "10";
+          when "100" => -- xor
+            OrigAULA <= "01";
+            OrigBULA <= "00";
+            ALUOp <= "10";
+          when others =>
+            null;
+        end case;                     
+      when "0010011" => --i 
+        case funct3 is
+          when "000" => --addi
+            OrigAULA <= "01";
+            OrigBULA <= "10";
+            ALUOp <= "00";
+          when "110" => --ori
+            OrigAULA <= "01";
+            OrigBULA <= "10";
+            ALUOp <= "00";            
+          when "111" => --andi
+            OrigAULA <= "01";
+            OrigBULA <= "10";
+            ALUOp <= "00";
+          when "100" => --xori
+            OrigAULA <= "01";
+            OrigBULA <= "10";
+            ALUOp <= "00";
+          when others =>
+            null;
+        end case;
+      when "1100011" => --branch (beq ,bne)
+        case funct3 is
+          when "000" => --beq
+            OrigAULA <= "01";
+            OrigBULA <= "00";
+            ALUOp <= "01";
+          when "001" => --bne
+            OrigAULA <= "01";
+            OrigBULA <= "00";
+            ALUOp <= "01";
+          when others =>
+            null;
+        end case;
+      when "1100111" => --jalr
+        OrigAULA <= "00";
+        OrigBULA <= "10";
+        ALUOp <= "00";    
+      when "1101111" => --jal
+        OrigAULA <= "00";
+        OrigBULA <= "10";
+        ALUOp <= "00";
+      when "0110111" => --lui
+        null;
+      when "0010111" => --auipc
+        OrigAULA <= "00";
+        OrigBULA <= "10";
+        ALUOp <= "00";
+      when others =>
+        null;
+    end case;
+  end process;
 
 end architecture ;
