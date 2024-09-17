@@ -4,6 +4,7 @@ use ieee.numeric_std.all;
 
 entity ULA is
     Port(
+        ATIVA_ULA : in std_logic;
         opcode : in std_logic_vector(3 downto 0);
         A, B : in std_logic_vector(31 downto 0);
         Z : out std_logic_vector(31 downto 0);
@@ -20,9 +21,9 @@ begin
     begin
         -- Verifica se o resultado é zero
         if a32 = X"00000000" then 
-            zero <= '1'; 
+            cond <= '1'; 
         else 
-            zero <= '0';
+            cond <= '0';
         end if;
 
         -- Seleção de operação com base no opcode
@@ -42,7 +43,7 @@ begin
             when "0110" =>  -- Deslocamento lógico à direita
                 a32 <= std_logic_vector(unsigned(A) srl to_integer(unsigned(B)));
             when "0111" =>  -- Deslocamento à direita com sinal (SRA)
-    		a32 <= std_logic_vector(shift_right(signed(A), to_integer(unsigned(B))));
+            a32 <= std_logic_vector(shift_right(signed(A), to_integer(unsigned(B))));
 
             when "1000" =>  -- SLT A, B (Z = 1 se A < B, com sinal)
                 if signed(A) < signed(B) then
@@ -83,5 +84,6 @@ begin
             when others =>  -- Padrão para qualquer outro opcode
                 a32 <= (others => '0');
         end case;
+    
     end process proc_ula;
 end architecture Behavioral;

@@ -42,7 +42,7 @@ begin
             when "0110" =>  -- Deslocamento lógico à direita
                 a32 <= std_logic_vector(unsigned(A) srl to_integer(unsigned(B)));
             when "0111" =>  -- Deslocamento à direita com sinal (SRA)
-    		a32 <= std_logic_vector(shift_right(signed(A), to_integer(unsigned(B))));
+            a32 <= std_logic_vector(shift_right(signed(A), to_integer(unsigned(B))));
 
             when "1000" =>  -- SLT A, B (Z = 1 se A < B, com sinal)
                 if signed(A) < signed(B) then
@@ -83,5 +83,6 @@ begin
             when others =>  -- Padrão para qualquer outro opcode
                 a32 <= (others => '0');
         end case;
+    
     end process proc_ula;
 end architecture Behavioral;

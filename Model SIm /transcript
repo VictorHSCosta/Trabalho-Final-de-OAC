@@ -1816,3 +1816,759 @@ run
 #    Time: 0 ps  Iteration: 2  Instance: /ent_tb/uut/XREGS1
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+quit -sim
+# End time: 20:13:28 on Sep 15,2024, Elapsed time: 0:08:04
+# Errors: 0, Warnings: 4
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl failed with 2 errors.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+# Errors: 0, Warnings: 0
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Errors: 0, Warnings: 0
+# Compile of gerador_imediatos.vhdl was successful.
+# Errors: 0, Warnings: 0
+# Compile of mem_rv.vhdl was successful.
+# Errors: 0, Warnings: 0
+# Compile of ULA.vhdl was successful.
+# Errors: 0, Warnings: 0
+# Compile of ContadorDePRograma.vhdl was successful.
+# Errors: 0, Warnings: 0
+# Compile of TestBench.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of index.vhdl was successful.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:23:11 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+quit -sim
+# End time: 20:23:43 on Sep 15,2024, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 8
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:27:09 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+quit -sim
+# End time: 20:28:38 on Sep 15,2024, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 5
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:29:02 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+quit -sim
+# End time: 20:29:42 on Sep 15,2024, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 5
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:30:03 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+quit -sim
+# End time: 20:32:07 on Sep 15,2024, Elapsed time: 0:02:04
+# Errors: 0, Warnings: 5
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:33:03 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+quit -sim
+# End time: 20:34:55 on Sep 15,2024, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 3
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:36:43 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+quit -sim
+# End time: 20:40:08 on Sep 15,2024, Elapsed time: 0:03:25
+# Errors: 0, Warnings: 3
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:40:29 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+run
+quit -sim
+# End time: 20:40:53 on Sep 15,2024, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 3
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:41:00 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+run
+quit -sim
+# End time: 20:44:59 on Sep 15,2024, Elapsed time: 0:03:59
+# Errors: 0, Warnings: 2
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl failed with 1 errors.
+# 7 compiles, 1 failed with 1 error.
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:49:17 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+quit -sim
+# End time: 20:50:20 on Sep 15,2024, Elapsed time: 0:01:03
+# Errors: 0, Warnings: 5
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 20:59:26 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+quit -sim
+# End time: 21:00:28 on Sep 15,2024, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 4
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:01:01 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+run
+quit -sim
+# End time: 21:04:48 on Sep 15,2024, Elapsed time: 0:03:47
+# Errors: 0, Warnings: 5
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:05:01 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint sim:/ent_tb/uut/*
+quit -sim
+# End time: 21:08:21 on Sep 15,2024, Elapsed time: 0:03:20
+# Errors: 0, Warnings: 3
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:08:28 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 21:11:47 on Sep 15,2024, Elapsed time: 0:03:19
+# Errors: 0, Warnings: 2
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:12:05 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+run
+quit -sim
+# End time: 21:13:41 on Sep 15,2024, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 3
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:13:59 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1140 ns  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1220 ns  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1220 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1220 ns  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1300 ns  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1380 ns  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+quit -sim
+# End time: 21:23:13 on Sep 15,2024, Elapsed time: 0:09:14
+# Errors: 0, Warnings: 9
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:23:27 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 21:27:51 on Sep 15,2024, Elapsed time: 0:04:24
+# Errors: 0, Warnings: 3
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:29:29 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1140 ns  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+quit -sim
+# End time: 21:31:14 on Sep 15,2024, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 3
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:32:20 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 58 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+quit -sim
+# End time: 21:35:54 on Sep 15,2024, Elapsed time: 0:03:34
+# Errors: 0, Warnings: 5
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:36:17 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 74 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 78 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+quit -sim
+# End time: 21:37:27 on Sep 15,2024, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 5
+# Compile of Banco_de_Registradores.vhdl was successful.
+# Compile of gerador_imediatos.vhdl was successful.
+# Compile of mem_rv.vhdl was successful.
+# Compile of ULA.vhdl was successful.
+# Compile of ContadorDePRograma.vhdl was successful.
+# Compile of TestBench.vhd was successful.
+# Compile of index.vhdl was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.ent_tb
+# vsim work.ent_tb 
+# Start time: 21:39:47 on Sep 15,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ent_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.ent(arch)
+# Loading work.xregs(main)
+# Loading work.gerador_imediatos(main)
+# Loading ieee.std_logic_textio(body)
+# Loading work.mem_rv(rtl)
+# Loading work.ula(behavioral)
+# ** Warning: (vsim-3473) Component instance "ALUControl1 : ALUControl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /ent_tb/uut File: /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model SIm /index.vhdl
+add wave -position insertpoint sim:/ent_tb/uut/*
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 74 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 78 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 82 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 82 us  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 82 us  Iteration: 3  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 86 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 94 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 98 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 102 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 106 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 114 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 118 us  Iteration: 2  Instance: /ent_tb/uut/XREGS1
