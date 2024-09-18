@@ -14,7 +14,7 @@ Z0 w1726495174
 Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 328
+!i122 1137
 Z4 d/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2
 Z5 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/TestBench.vhdl
 Z6 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/TestBench.vhdl
@@ -24,9 +24,9 @@ VlNC6kFHCMGl_ke`XL053>0
 !s100 b<gicgZZKS?RTo]dne`Ma3
 Z7 OV;C;2020.1;71
 32
-Z8 !s110 1726616330
+Z8 !s110 1726699966
 !i10b 1
-Z9 !s108 1726616330.000000
+Z9 !s108 1726699966.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/TestBench.vhdl|
 Z11 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/TestBench.vhdl|
 !i113 1
@@ -36,12 +36,12 @@ Abehavior
 R1
 R2
 R3
-Z14 DEx4 work 6 ent_tb 0 22 lNC6kFHCMGl_ke`XL053>0
-!i122 328
+DEx4 work 6 ent_tb 0 22 lNC6kFHCMGl_ke`XL053>0
+!i122 1137
 l20
-Z15 L8 32
-Z16 VKT7iHBWG?[Kc`CKW8h=hb3
-Z17 !s100 Tj^NkieV@_50Aco]OGZ8N3
+L8 32
+VKT7iHBWG?[Kc`CKW8h=hb3
+!s100 Tj^NkieV@_50Aco]OGZ8N3
 R7
 32
 R8
@@ -53,14 +53,14 @@ R11
 R12
 R13
 Egerador_imediatos
-Z18 w1724032360
+Z14 w1726670350
 R1
 R2
 R3
-!i122 324
+!i122 1133
 R4
-Z19 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador_imediatos.vhdl
-Z20 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador_imediatos.vhdl
+Z15 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador_imediatos.vhdl
+Z16 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador_imediatos.vhdl
 l0
 L5 1
 VHC`_`5LIE_Oi3KX3BcR`c1
@@ -70,8 +70,8 @@ R7
 R8
 !i10b 1
 R9
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador_imediatos.vhdl|
-Z22 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador_imediatos.vhdl|
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador_imediatos.vhdl|
+Z18 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador_imediatos.vhdl|
 !i113 1
 R12
 R13
@@ -80,31 +80,31 @@ R1
 R2
 R3
 DEx4 work 17 gerador_imediatos 0 22 HC`_`5LIE_Oi3KX3BcR`c1
-!i122 324
+!i122 1133
 l14
-L11 16
-Vo:oP[hbn<1WmfNL?^VU7_1
-!s100 REkPfi1?Aa5kzEYWHVllT0
+L11 17
+V_6f>ml6_[l^4SKJLbI?J40
+!s100 D<[TPi8LZELGb6:hOJjd90
 R7
 32
 R8
 !i10b 1
 R9
-R21
-R22
+R17
+R18
 !i113 1
 R12
 R13
 Emem_rv
-Z23 w1726442129
-Z24 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z19 w1726675761
+Z20 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
 R1
 R2
 R3
-!i122 326
+!i122 1135
 R4
-Z25 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/mem_rv.vhdl
-Z26 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/mem_rv.vhdl
+Z21 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/mem_rv.vhdl
+Z22 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/mem_rv.vhdl
 l0
 L7 1
 V@D=6JnaUGi21Zd:^M`FUl1
@@ -114,41 +114,41 @@ R7
 R8
 !i10b 1
 R9
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/mem_rv.vhdl|
-Z28 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/mem_rv.vhdl|
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/mem_rv.vhdl|
+Z24 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/mem_rv.vhdl|
 !i113 1
 R12
 R13
 Artl
-R24
+R20
 R1
 R2
 R3
 DEx4 work 6 mem_rv 0 22 @D=6JnaUGi21Zd:^M`FUl1
-!i122 326
+!i122 1135
 l40
 L17 43
-VJSn_;]HdcdkmaVm3RTW`41
-!s100 zE39zm<UUE[T^BCS8l>Tg0
+VR6f^3UVRzm<EL1T0XP6K73
+!s100 _CATOT8CUI]Gah6=nWBbe2
 R7
 32
 R8
 !i10b 1
 R9
-R27
-R28
+R23
+R24
 !i113 1
 R12
 R13
 Emulticiclo
-Z29 w1726616059
+Z25 w1726699964
 R1
 R2
 R3
-!i122 325
+!i122 1134
 R4
-Z30 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/index.vhdl
-Z31 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/index.vhdl
+Z26 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/index.vhdl
+Z27 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/index.vhdl
 l0
 L5 1
 Vf;IVPblVN;11;Sm>:AzJY2
@@ -158,8 +158,8 @@ R7
 R8
 !i10b 1
 R9
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/index.vhdl|
-Z33 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/index.vhdl|
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/index.vhdl|
+Z29 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/index.vhdl|
 !i113 1
 R12
 R13
@@ -168,41 +168,147 @@ R1
 R2
 R3
 DEx4 work 10 multiciclo 0 22 f;IVPblVN;11;Sm>:AzJY2
-!i122 325
-l69
-L11 420
-V`]<W6@c@Ma?AKaV2A?o0f0
-!s100 o[T<aSH4W?4Y_SaNcD4Ai1
+!i122 1134
+l72
+L11 398
+V>H;7TPF0[jH85FYAOI6SB2
+!s100 =WZDW<EC2ag]7Y^1j_oAK1
 R7
 32
 R8
 !i10b 1
 R9
-R32
+R28
+R29
+!i113 1
+R12
+R13
+Etb_gerador_imediatos
+Z30 w1726669809
+R1
+R2
+R3
+!i122 565
+R4
+Z31 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador teste.vhd
+Z32 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador teste.vhd
+l0
+L6 1
+Va[BRc1>lOolLC3_c1NC>J2
+!s100 O;YFGT4<zF?P[cRI]H[260
+R7
+32
+Z33 !s110 1726672567
+!i10b 1
+Z34 !s108 1726672566.000000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador teste.vhd|
+Z36 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/gerador teste.vhd|
+!i113 1
+R12
+R13
+Asim
+R1
+R2
+R3
+DEx4 work 20 tb_gerador_imediatos 0 22 a[BRc1>lOolLC3_c1NC>J2
+!i122 565
+l23
+L9 35
+V_^;IUD5]_gP[_eI=o<PXh2
+!s100 <=aiY>IRQFf?UFz8F^47H0
+R7
+32
 R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R12
+R13
+Etb_mem_rv
+Z37 w1726674917
+R1
+R2
+R3
+!i122 1138
+R4
+Z38 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/teste da memoria.vhd
+Z39 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/teste da memoria.vhd
+l0
+L6 1
+V;Eg8oKBeW>WR<7=QBDjn03
+!s100 2eDYaJaKY8iXVaGW:bhGY1
+R7
+32
+R8
+!i10b 1
+R9
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/teste da memoria.vhd|
+Z41 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/teste da memoria.vhd|
+!i113 1
+R12
+R13
+Asim
+R1
+R2
+R3
+Z42 DEx4 work 9 tb_mem_rv 0 22 ;Eg8oKBeW>WR<7=QBDjn03
+!i122 1138
+l32
+Z43 L9 85
+Z44 VOcGzPPZRzLQ;IYl33SIT92
+Z45 !s100 8>Nhn2@dn5Sdmf:=aeJT50
+R7
+32
+R8
+!i10b 1
+R9
+R40
+R41
 !i113 1
 R12
 R13
 Eula
-Z34 w1726525229
+Z46 w1726686188
 R1
 R2
 R3
-!i122 327
+!i122 1136
 R4
-Z35 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/ULA.vhdl
-Z36 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/ULA.vhdl
+Z47 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/ULA.vhdl
+Z48 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/ULA.vhdl
 l0
 L5 1
-VD01OCBH0lR^@?i2TdTdOV1
-!s100 c<ZC>B0NUn=Z=5gX4`I0>1
+V>>NQ;d?l5VSU;[l]S4JP?2
+!s100 I;zeR1FUkm9z[mCZ]R2b`0
 R7
 32
 R8
 !i10b 1
 R9
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/ULA.vhdl|
-Z38 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/ULA.vhdl|
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/ULA.vhdl|
+Z50 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/ULA.vhdl|
+!i113 1
+R12
+R13
+Amain
+R1
+R2
+R3
+DEx4 work 3 ula 0 22 >>NQ;d?l5VSU;[l]S4JP?2
+!i122 1136
+l15
+L14 70
+V[RcBoV=XS1FF4moF2LSWO0
+!s100 =9:fdoP]5`5@j^E_dQLB_3
+R7
+32
+R8
+!i10b 1
+R9
+R49
+R50
 !i113 1
 R12
 R13
@@ -211,30 +317,31 @@ R1
 R2
 R3
 DEx4 work 3 ula 0 22 D01OCBH0lR^@?i2TdTdOV1
-!i122 327
+!i122 815
 l16
-L14 75
-Vcb9LF_aCZH8:]M>=HbnG]3
-!s100 FVC4<X^CInBiG;0cjC?eD1
+L14 80
+V[3DUG6G24X^^nSA^[Mk`h3
+!s100 9;kf96F<j?39eL1^MhN7D2
 R7
 32
-R8
+!s110 1726685953
 !i10b 1
-R9
-R37
-R38
+!s108 1726685953.000000
+R49
+R50
 !i113 1
 R12
 R13
+w1726685949
 Exregs
-Z39 w1726269880
+Z51 w1726269880
 R1
 R2
 R3
-!i122 323
+!i122 1132
 R4
-Z40 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/Banco_de_Registradores.vhdl
-Z41 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/Banco_de_Registradores.vhdl
+Z52 8/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/Banco_de_Registradores.vhdl
+Z53 F/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/Banco_de_Registradores.vhdl
 l0
 L6 1
 V7WCUzi7<dXY]?7A>W<dm;3
@@ -244,8 +351,8 @@ R7
 R8
 !i10b 1
 R9
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/Banco_de_Registradores.vhdl|
-Z43 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/Banco_de_Registradores.vhdl|
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/Banco_de_Registradores.vhdl|
+Z55 !s107 /home/victor-costa/Documentos/OAC/Trabalho Final OAC/Model sim 2/Banco_de_Registradores.vhdl|
 !i113 1
 R12
 R13
@@ -254,7 +361,7 @@ R1
 R2
 R3
 DEx4 work 5 xregs 0 22 7WCUzi7<dXY]?7A>W<dm;3
-!i122 323
+!i122 1132
 l20
 L16 36
 VlQ7gbD[`NF=g22^P[be`b1
@@ -264,8 +371,8 @@ R7
 R8
 !i10b 1
 R9
-R42
-R43
+R54
+R55
 !i113 1
 R12
 R13

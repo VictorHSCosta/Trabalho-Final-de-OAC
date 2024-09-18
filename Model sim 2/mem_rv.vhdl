@@ -23,7 +23,7 @@ architecture RTL of mem_rv is
     variable ram_content: ram_type;
 
   begin
-    for i in 0 to 2048 loop  
+    for i in 0 to 4095 loop  
       if endfile(text_file) then
         exit;
       end if;

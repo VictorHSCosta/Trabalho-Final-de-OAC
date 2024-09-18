@@ -7,8 +7,8 @@ def process_files():
     total_linhas = len(linhas)
 
     # Se houver menos de 2047 linhas, preenche com "00000000"
-    if total_linhas < 2047:
-        for _ in range(2047 - total_linhas):
+    if total_linhas < 2048:
+        for _ in range(2048 - total_linhas):
             linhas.append("00000000\n")
 
     # Escreve o conteúdo no arquivo arquivo.txt

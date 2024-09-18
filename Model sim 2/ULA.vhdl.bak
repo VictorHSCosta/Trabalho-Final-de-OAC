@@ -14,7 +14,7 @@ end ULA;
 architecture main of ULA is
 begin
     
-    process(A, B, opcode)
+    process(A, B, Z, cond, opcode)
     begin
     	cond <= '0';
        

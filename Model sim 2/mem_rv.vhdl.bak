@@ -6,7 +6,7 @@ use ieee.std_logic_textio.all;
 
 entity mem_rv is
   port (
-    --clock   : in std_logic;
+    clock   : in std_logic;
     we      : in std_logic;
     address : in std_logic_vector(11 downto 0);
     datain  : in std_logic_vector(31 downto 0);
@@ -23,7 +23,7 @@ architecture RTL of mem_rv is
     variable ram_content: ram_type;
 
   begin
-    for i in 0 to 2048 loop  
+    for i in 0 to 4000 loop  
       if endfile(text_file) then
         exit;
       end if;
@@ -41,7 +41,7 @@ begin
 
   process (clock, datain)
   begin
-    --if rising_edge(clock) then
+    if rising_edge(clock) then
       dataout_internal <= mem(to_integer(unsigned(address)));
       
       if we = '1' then
@@ -50,7 +50,7 @@ begin
         end if;
       end if;
       
-    --end if;
+    end if;
   end process;
 
   -- Atribuir o valor do sinal interno à porta de saída

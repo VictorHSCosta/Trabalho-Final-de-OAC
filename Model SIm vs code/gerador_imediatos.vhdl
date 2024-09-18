@@ -21,6 +21,7 @@ begin
                 std_logic_vector(resize(signed(instrucao(31) & instrucao(7) & instrucao(30 downto 25) & instrucao(11 downto 8) & "0"), 32)) when opcode = "1100011" else 	-- SB-type
                 std_logic_vector(resize(signed(instrucao(31) & instrucao(19 downto 12) & instrucao(20) & instrucao(30 downto 21) & "0"), 32)) when opcode = "1101111" else	-- UJ-type
                 std_logic_vector(resize(signed(instrucao(31 downto 12) & "000000000000"), 32)) when opcode = "0110111" else 												-- U-type
+                std_logic_vector(resize(signed(instrucao(31 downto 12) & "000000000000"), 32)) when opcode = "0010111" else 												-- U-type
 				(others => '0');
     
 end main;
